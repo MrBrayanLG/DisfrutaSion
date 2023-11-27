@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disfruta-Sión - Registrarse</title>
+    <link rel="icon" href="IMG/Logo-DIsfru-removebg-preview.ico">
+    <link rel="stylesheet" href="css/Registrarse.css">
+    <script src="Registro.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <img src="IMG/Fondo-WebOrigin.png" alt="FondoDISFRUTA-SIÓN">
+    </div>
+
+    <form action="#" id="form" class="form_register">
+        <input class="registro" type="text" name="nombre" id="nombres" placeholder="Nombre" required><br>
+        <input class="registro" type="text" name="apellido" id="apellidos" placeholder="Apellidos" required><br>
+        <input class="registro" type="email" name="correo" id="correo" placeholder="Correo Electrónico" required><br>
+        <input class="registro" type="password" name="Contraseña" id="password" placeholder="Contraseña" required><br>
+        <label for="genero">Género:</label>
+        <select class="registro" name="genero" id="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        
+        <p >        <input type="checkbox">
+            Estoy de acuerdo con <a href="#">Términos & Condiciones</a></p>
+        <input class="botons" type="button" value="Registrar" onclick="guardarUsuario()">
+        <p>¿Ya tienes una cuenta? <a href="index.html">Iniciar Sesión</a></p>
+    </form>
+</body>
+
+</html>

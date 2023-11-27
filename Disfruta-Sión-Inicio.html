@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Inicio.css">
+    <link rel="icon" href="IMG/Logo-DIsfru-removebg-preview.ico">
+    <script src="inicio.js"></script>
+
+
+
+    <title>Disfruta-Síon</title>
+</head>
+
+<body>
+    <nav class="estilo-nav">
+        <ul class="lista">
+            <img src="IMG/Logo-DIsfru-removebg-preview.ico" alt="Logo de la empresa" class="logo-nav">
+            <li><a href="#inicio" class="enlace-inicio">INICIO</a></li>
+            <li><a href="#menu" class="enlace-menu">MENÚ</a></li>
+            <li><a href="#nosotros" class="enlace-nosotros">NOSOTROS</a></li>
+            <p id="saludo-usuario"></p>
+            <div class="popover">
+                <div class="popover">
+                    <img class="bars" src="SVG-ICON/cart-shopping-solid.svg" alt="carrito de compra"
+                        onclick="toggleOptions()">
+                    <img class="bars" src="SVG-ICON/user-regular.svg" alt="bars" onclick="toggleOptions()">
+                    <div class="options-container" id="optionsContainer">
+                        <ul class="options">
+                            <li onclick="goToProfile()">Perfil</li>
+                            <li onclick="cerrarSesion()">Cerrar</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </ul>
+        
+    </nav>
+
+    <div id="inicio" class="imagen-texto">
+        <section class="nosotros-section">
+                    <img class="hambu-img" src="IMG/Logo-DIsfru-removebg-preview.ico" alt="foto de una hamburguesa">
+
+            <article class="historia">
+                <header>
+                    <h2>¡Descubre Nuestra Nueva Hamburguesa Especial!</h2>
+                </header>
+                <p>No te pierdas la oportunidad de deleitarte con esta hamburguesa única. Ya sea para el almuerzo, la cena o
+                    un antojo rápido, nuestra hamburguesa especial está lista para satisfacer tu apetito. Ven a
+                    <strong>DISFRUTA-SIÓN</strong> y descubre el sabor que todos están comentando.
+                </p>        </article>
+        </section>
+            
+        </div>
+    </div>
+    <br>
+    <div class="linea-menu">
+        <hr>
+        <div id="menu" class="menu-titulo">MENÚ</div>
+    </div>
+    <div class="grid-container">
+        <div class="menu">
+            <div class="m1">
+                PICADAS
+            </div>
+
+
+
+
+            <div class="menu-item" id="picada">
+                <h2>PICADA PA MÍ</h2>
+                <p>100gr papa Francesas, Chorizo, Butifarra, Pollo, Maíz, Queso Mozarella, Lechuga, Papa Fosforito,
+                    Salsas.
+                </p>
+                <span class="precio">$14.000 COP</span>
+            </div>
+            <div class="menu-item">
+                <h2>PICADA SALVAJE</h2>
+                <p>200gr Papa Francesas, Chorizo, Butifarra, Pollo, Maíz, Queso Mozarella, Lechuga, Papa Fosforito,
+                    Salsas.
+                </p>
+                <span class="precio">$22.000 COP</span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="m1">
+                PERROS CALIENTES
+            </div>
+            <div class="menu-item" id="w">
+                <h2>CHORIPERRO</h2>
+                <p>Chorizo, Queso Mozarella, Papa Fosforito, Salsas, Cebolla, Lechuga.</p>
+                <span class="precio">$13.000 COP</span>
+            </div>
+            <div class="menu-item" id="w">
+                <h2>PERRO SALVAJE</h2>
+                <p>Salchicha, Queso Mozarella, Chorizo, Butifarra, Pollo, Maíz, Papa Fosforito, Salsas, Cebolla,
+                    Lechuga.
+                </p>
+                <span class="precio">$22.000 COP</span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="m1">
+                HAMBURGUESAS
+            </div>
+            <div class="menu-item">
+                <h2>HAMBURGUESA COSTEÑA</h2>
+                <p>120gr Carne Artesanal, Jamón ahumado, Cebolla, Tomate, Lechuga, Queso Mozarella, Queso
+                    Costeño,Papa Fosforito, Salsas.</p>
+                <span class="precio">$12.000 COP</span>
+            </div>
+            <div class="menu-item">
+                <h2>HAMBURGUESA SENCILLA</h2>
+                <p>120gr Carne Artesanal, Jamón ahumado, Cebolla, Tomate, Lechuga, Queso Mozarella,Salsas.</p>
+                <span class="precio">$22.000 COP</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="linea-menu">
+        <hr>
+        <div id="nosotros" class="menu-titulo">NOSOTROS</div>
+    </div>
+
+    <section class="nosotros-section">
+        <article class="historia">
+            <header>
+                <h2>Nuestra Historia</h2>
+            </header>
+            <p>Nacimos de una idea que se hizo realidad. En el año 2023, un grupo de apasionados amantes de la comida rápida decidió unirse y dar vida a DISFRUTA-SIÓN. En un modesto local en el corazón de la ciudad, comenzamos a servir deliciosas hamburguesas y perros calientes con un toque único y casero.</p>
+        </article>
+        
+        <article class="mision">
+            <header>
+                <h2>Nuestra Misión</h2>
+            </header>
+            <p>En <strong>DISFRUTA-SIÓN</strong>, nuestra misión es simple: llegar a ser reconocidos como el destino culinario preferido para todos los amantes de la comida rápida. Nos esforzamos por superar las expectativas de nuestros clientes en cada plato que servimos y en cada experiencia que ofrecemos, utilizando los mejores productos.</p>
+        </article>
+    </section>
+    
+
+
+
+    <div id="reseñas" class="seccion con-logo">
+
+
+        <h2 class="seccion-titulo">Reseñas de Clientes</h2>
+
+        <div class="resenas-container">
+            <div class="resena">
+                <h3 class="cliente-nombre">Paula Florez</h3>
+                <p class="cliente-resena">"¡Increíble experiencia! La hamburguesa especial es deliciosa. Definitivamente
+                    volveré."</p>
+            </div>
+
+            <div class="resena">
+                <h3 class="cliente-nombre">Ronald Zapateiro</h3>
+                <p class="cliente-resena">"El servicio fue rápido y la calidad de la comida es excelente. Recomiendo la
+                    picada salvaje."</p>
+            </div>
+            <div class="resenas-container" id="resenas-container">
+
+            </div>
+
+            
+
+        </div>
+
+        
+        <div class="agregar-resena">
+        <h3 class="agregar-titulo">Deja tu Reseña</h3>
+        <form class="agregar-formulario" id="formulario-reseña">
+            <label for="nombre" class="agregar-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="agregar-input" required>
+
+            <label for="reseña" class="agregar-label">Reseña:</label>
+            <textarea id="reseña" name="reseña" rows="4" class="agregar-input" required></textarea>
+
+            <button type="button" class="agregar-boton" onclick="agregarReseña()">Enviar Reseña</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <footer>
+
+        <div class="footer-contenido">
+            <p>Copyright &copy; 2023 DISFRUTA-SIÓN - Comida Rápida</p>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=100095370104357" target="_blank">
+
+                    <img src="SVG-ICON/square-facebook.svg" alt="Facebook" id="fc">
+                </a>
+                <a href="https://wa.me/3246253688" target="_blank">
+
+                    <img src="SVG-ICON/square-whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.google.com/maps/place/DISFRUTA-SI%C3%93N,+Cra.+17+%2346-26,+Nari%C3%B1o,+Cartagena+de+Indias,+Provincia+de+Cartagena,+Nari%C3%B1o/data=!4m2!3m1!1s0x8ef62f54a7c33f51:0x885eba413c82368d?utm_source=mstt_1&entry=gps&lucs=47068615&g_ep=CAESCTExLjkwLjMwMRgAIIgnKgg0NzA2
+                865&fbclid=IwAR3oZRG3TzGCS-R4udqyNhEohPEQnTKQi5iFIMLWw0ldONmj_F1WBvWIlIU" target="_blank">
+
+                    <img src="SVG-ICON/location-dot-solid.svg" alt="Google Maps">
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+</html>

@@ -57,7 +57,20 @@ if (nombreUsuario) {
 
 
 
+function mostrarPopup(mensaje) {
+    document.getElementById('popup-message').innerText = mensaje;
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
 
+function cerrarPopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
+
+function mostrarMensajeDeAlerta(mensaje) {
+    mostrarPopup(mensaje);
+}
 
 
 

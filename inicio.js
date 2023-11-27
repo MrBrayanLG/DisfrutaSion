@@ -50,3 +50,21 @@ function agregarReseña() {
     }
 }
 
+function guardarReseña(nombre, comentario) {
+    var reseñasGuardadas = JSON.parse(localStorage.getItem('reseñas')) || [];
+
+    reseñasGuardadas.push({ nombre: nombre, comentario: comentario });
+
+    localStorage.setItem('reseñas', JSON.stringify(reseñasGuardadas));
+}
+
+function cargarReseñas() {
+    var reseñasGuardadas = JSON.parse(localStorage.getItem('reseñas')) || [];
+
+    var contenedorReseñas = document.getElementById('resenas-container');
+    reseñasGuardadas.forEach(function (reseña) {
+        var nuevaReseña = document.createElement('div');
+        nuevaReseña.innerHTML = '<div class="resena"><h3 class="cliente-nombre">' + reseña.nombre + '</h3><p class="cliente-resena">' + reseña.comentario + '</p></div>';
+        contenedorReseñas.appendChild(nuevaReseña);
+    });
+}

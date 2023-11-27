@@ -1,5 +1,11 @@
 
-
+function guardarUsuario() {
+    
+    var nombre = document.getElementById("nombres").value;
+    var apellido = document.getElementById("apellidos").value;
+    var correo = document.getElementById("correo").value;
+    var contraseña = document.getElementById("password").value;
+    var genero = document.getElementById("genero").value;
 
     
     var usuario = {

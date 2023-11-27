@@ -1,4 +1,21 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
 
+    
+}
+
+
+
+.bars {
+    width: 30px; 
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+  
+    }
+.bars:hover {
+    transform: scale(1.3);
     
 
 }
